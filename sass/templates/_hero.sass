@@ -1,0 +1,120 @@
+.hero
+  background-color: $light
+  &__container
+    position: relative
+  &__row
+    display: flex
+  &__col-40
+    width: 40%
+  &__col-60
+    position: relative
+    margin-left: -11.428rem 
+    z-index: 10
+    max-width: 60%
+  &__title
+    margin-top: 6.3rem
+    max-width: 33rem
+    font-family: 'DIN Pro Light'
+    font-size: 2.5rem
+    text-transform: uppercase
+    line-height: 3.4rem
+    letter-spacing: 0.08rem
+    &--strong
+      font-family: 'DIN Pro Regular'
+  &__button
+    margin-top: 2.1rem
+    margin-bottom: 5.7rem
+    width: 10rem
+    height: 3.8rem
+    position: relative
+    display: flex
+    align-items: center
+    background-color: $dark
+    font-family: 'DIN Pro Regular'
+    font-size: 1.3rem
+    padding-left: 2rem
+    &--href
+      text-decoration: none
+      color: $light
+    &::after
+      content: ''
+      position: absolute
+      background: url('../img/main-page/arrow-next-white.svg') no-repeat center
+      background-size: 10px
+      top: 3px
+      bottom: 0
+      margin-top: auto
+      margin-bottom: auto
+      right: 1.6rem
+      width: 1rem
+      height: 1rem
+  &__price
+    color: $primary
+    font-size: 1.7rem
+    line-height: 2.7rem
+    margin-top: 1rem
+    &-text
+      width: 15rem
+      position: absolute
+      bottom: 3.3rem
+      right: 4.4rem
+      font-family: 'DIN Pro Regular'
+      color: $dark-grey
+      font-size: 1rem
+      line-height: 1.4rem
+.swiper
+  &__navigation
+    display: flex
+  &-slide
+    position: relative
+.button
+  &-prev
+    outline: none
+    width: 3.071rem
+    height: 3.071rem 
+    background: url('../img/main-page/arrow-next-dark.svg') no-repeat center 
+    background-size: 25px
+    transform: rotate(180deg)
+    border: solid 1px $dark-grey
+    &--dark
+      outline: none
+      width: 3.071rem
+      height: 3.071rem 
+      background: $dark url('../img/main-page/arrow-next-white.svg') no-repeat center
+      background-size: 25px
+      transform: rotate(180deg)
+      border: solid 1px $dark-grey
+  &-next
+    outline: none
+    width: 3.071rem
+    height: 3.071rem 
+    background: url('../img/main-page/arrow-next-dark.svg') no-repeat center
+    background-size: 25px
+    margin-left: 1rem
+    border: solid 1px $dark-grey
+    &:hover
+      cursor: pointer
+      background: $primary url('../img/main-page/arrow-next-white.svg') no-repeat center
+      background-size: 25px
+    &--dark
+      outline: none
+      width: 3.071rem
+      height: 3.071rem 
+      background: $dark url('../img/main-page/arrow-next-white.svg') no-repeat center
+      background-size: 1.7857rem
+      fill: red
+      margin-left: 1rem
+      border: solid 1px $dark-grey
+.social
+  &__icons
+    width: 31px
+    position: absolute
+    right: 0
+    bottom: 2.8rem
+    z-index: 99
+    text-align: right
+  &__svg
+    width: 1rem
+    height: 2.3rem
+    fill: $dark-grey
+ 

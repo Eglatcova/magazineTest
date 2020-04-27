@@ -1,0 +1,107 @@
+.types
+  margin-top: 2rem
+  &__row
+    margin-top: 2.4rem
+    display: flex
+    justify-content: space-between
+  &__col
+    display: flex
+    flex-basis: 32%
+    background-color: $light
+    &--right
+      display: flex
+      align-items: flex-end
+      justify-content: center
+      width: 50%
+  &__title
+    position: relative
+    margin: auto
+    border: solid 1px $dark
+    max-width: 47.5rem
+    height: 7rem
+    display: flex
+    align-items: center
+    font-family: 'DIN Pro Regular'
+    font-size: 1.73rem
+    padding-left: 4rem
+    text-transform: uppercase
+    color: $dark
+    &::before
+      content: ''
+      position: absolute
+      left: -11.571rem
+      z-index: 3
+      width: 1px
+      height: 23rem
+      transform: rotate(90deg)
+      background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(182,181,181,1) 24%, rgba(145,145,145,1) 48%, rgba(32,32,32,1) 75%)
+    &::after
+      content: ''
+      position: absolute
+      right: -11.571rem
+      z-index: 3
+      width: 1px
+      height: 23rem
+      transform: rotate(270deg)
+      background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(182,181,181,1) 24%, rgba(145,145,145,1) 48%, rgba(32,32,32,1) 75%)
+  &__strong
+    font-family: 'DIN Pro Bold'
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      background: url('../img/main-page/arrow-next-black.svg') no-repeat center
+      background-size: 10px
+      margin-top: auto
+      margin-bottom: auto
+      top: 3px
+      bottom: 0
+      right: -22.857rem
+      width: 0.714rem
+      height: 1rem
+      
+.type
+  &__title
+    margin-top: 3rem
+    margin-bottom: 2.2rem
+    font-family: 'DIN Pro Light'
+    color: $dark-grey
+    font-size: 1rem
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+  &__strong
+    color: $dark
+    font-size: 1.7rem
+  &__button
+    margin-top: 2.1rem
+    margin-bottom: 5.7rem
+    margin-left: 1rem
+    width: 8.5rem
+    height: 3rem
+    position: relative
+    display: flex
+    align-items: center
+    background-color: $white
+    font-family: 'DIN Pro Regular'
+    font-size: 1rem
+    padding-left: 2rem
+    border: solid 1.5px $dark
+    &--href
+      text-decoration: none
+      color: $dark
+    &::after
+      content: ''
+      position: absolute
+      background: url('../img/main-page/arrow-next-black.svg') no-repeat center
+      background-size: 0.57rem
+      top: 2px
+      bottom: 0
+      margin-top: auto
+      margin-bottom: auto
+      right: 1.7rem
+      width: 1rem
+      height: 1rem 
+
+
+

@@ -1,0 +1,91 @@
+.goods
+  margin-top: 7rem
+  &__row
+    margin-top: 4rem
+    display: flex
+    justify-content: space-between
+  &__col
+    flex-basis: 23%
+    display: flex
+    align-items: center
+    background: $light
+    color: $dark-grey
+    fill: $dark-grey
+    border-radius: 3px
+  &__svg
+    width: 1.42857rem
+    height: 1.42857rem
+    margin-left: 1rem
+  &__name
+    font-family: 'DIN Pro Light'
+    font-size: 1.1428rem
+    margin-left: 2rem
+    &--left
+      margin-left: 4rem
+  &__title
+    position: relative
+    max-width: 31rem
+    height: 12px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: auto
+    margin-top: 4rem
+    font-family: 'DIN Pro Light'
+    font-size: 2.6rem
+    border-right: solid 1px $grey
+    border-left: solid 1px $grey
+    &::before
+      content: ''
+      position: absolute
+      left: -15.857rem
+      z-index: 3
+      width: 0.54px
+      height: 31.571rem
+      transform: rotate(90deg)
+      background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(182,181,181,1) 24%, rgba(182,181,181,1) 48%, rgba(145,145,145,1) 75%)
+    &::after
+      content: ''
+      position: absolute
+      right: -15.857rem
+      z-index: 3
+      width: 1px
+      height: 31.571rem
+      transform: rotate(270deg)
+      background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(182,181,181,1) 24%, rgba(182,181,181,1) 48%, rgba(145,145,145,1) 75%)
+  &__button
+    margin: auto
+    margin-top: 2.8rem
+    margin-bottom: 5.7rem
+    width: 5.5rem
+    height: 3rem
+    position: relative
+    display: flex
+    align-items: center
+    background-color: $white
+    font-family: 'DIN Pro Regular'
+    font-size: 1.02rem
+    padding-left: 2.3rem
+    border: solid 1.5px $dark
+    &--href
+      text-decoration: none
+      color: $dark
+    &::after
+      content: ''
+      position: absolute
+      background: url('../img/main-page/arrow-next-black.svg') no-repeat center
+      background-size: 0.57rem
+      margin-top: auto
+      margin-bottom: auto
+      top: 2px
+      bottom: 0
+      right: 2.5rem
+      width: 0.714rem
+      height: 0.714rem 
+      transform: rotate(90deg)
+  .more
+    &__button
+      padding-left: 2rem
+      width: 5.1rem
+      &::after
+        right: 1.5rem

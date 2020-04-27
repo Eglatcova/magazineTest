@@ -1,0 +1,56 @@
+.cheep
+  margin-top: 8rem
+  &__img
+    position: relative
+    width: 100%
+.img
+  &__sale
+    position: absolute
+    width: 5.143rem
+    height: 3.57rem
+    top: 1rem
+    left: -1rem
+    z-index: 99
+    background: $primary
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: 'DIN Pro Regular'
+    color: $white
+    font-size: 2rem
+    &::after
+      content: ''
+      position: absolute
+      top: 3.55rem
+      left: 0rem
+      border-style: solid
+      border-color: transparent
+      border-width: 0 15px 8px 0
+      border-right-color: rgba($primary, 0.45)
+      z-index: 1000
+  &__icons
+    position: absolute
+    top: 0.714rem
+    height: 4.285rem
+    right: 0
+    z-index: 9999
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    &--add
+      fill: $white
+      &:hover
+        fill: $primary
+        cursor: pointer
+    &--like
+      fill: $white
+.old-price
+  &__number
+    margin-left: 1.3rem
+    margin-bottom: 1rem
+    font-family: 'DIN Pro Light'
+    color: $grey
+  &__strong
+    font-size: 1.4rem
+    text-decoration: line-through
+    color: $grey

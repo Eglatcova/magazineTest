@@ -1,0 +1,146 @@
+.main
+  margin-top: 8rem
+  position: relative
+  &__container
+    display: flex
+    justify-content: space-between
+  &__menu
+    flex-basis: 24%
+  &__title
+    position: absolute
+    top: -3.4285rem
+    font-family: 'DIN Pro Light'
+    font-size: 1.7rem
+    &-mobile
+      position: absolute
+      top: -4.4285rem
+      font-family: 'DIN Pro Light'
+      font-size: 1.7rem
+      display: none
+      &::after
+        content: ''
+        position: absolute
+        background: url('../img/main-page/arrow-next-black.svg') no-repeat center
+        background-size: 8px
+        margin-top: auto
+        margin-bottom: auto
+        top: 1px
+        bottom: 0
+        right: -7.82rem
+        width: 10px
+        height: 0.714rem 
+        transform: rotate(90deg)
+  &__goods-wrap
+    flex-basis: 74.4%
+  &__goods
+    display: flex
+    justify-content: space-between
+  &__col
+    flex-basis: 31.5%
+    justify-content: space-between
+    align-items: space-between
+    flex-direction: column
+  &__wrap
+    height: 43.2rem 
+  &__navigation
+    width: 27rem
+    display: flex
+    justify-content: space-between
+    margin: auto
+    &-wrap
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -2rem
+  &__phrase
+    font-family: 'DIN Pro Regular'
+    font-size: 1.15rem
+    margin-bottom: 2rem
+  &__items
+    font-family: 'DIN Pro Medium'
+    list-style-type: none
+    line-height: 2.6rem
+    font-size: 1.16rem
+    padding-left: 0
+  &__item
+    text-decoration: none
+    color: $dark
+    &:hover
+      color: $primary
+      text-decoration: underline 
+    &--click
+      color: $grey 
+      &:hover
+        color: $grey 
+        text-decoration: none 
+        cursor: default
+  &__buttons
+    padding-top: 2rem
+    border-top: solid 1px $dark-grey
+    width: 22.7rem
+  &__button
+    display: flex
+    align-items: center
+    width: 21rem
+    height: 4.51rem
+    padding-left: 1.4rem
+    margin-bottom: 0.7rem
+    border-radius: 4px
+    background: $light-grey
+    text-decoration: none
+    font-family: 'DIN Pro Medium'
+    font-size: 1.1rem
+    color: $dark
+    fill: $dark-grey
+  &__svg
+    width: 1.5rem
+    height: 1.5rem
+    margin-right: 1rem
+    &--footprint
+      transform: rotate(90deg)
+  &__word
+    margin-left: 1rem
+.navigation
+  &__block
+    width: 3.1rem
+    height: 3.1rem
+    border: solid 1.5px $dark  
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: 'DIN Pro Medium'
+    color: $dark
+    &--clicked
+      border: none
+      background: $light-grey
+      border: solid 1.5px $light-grey
+    &--next
+      border: none
+      background: $primary
+      fill: $white
+      border: solid 1.5px $primary
+    &--href
+      text-decoration: none
+.block
+  &__svg
+    width: 1rem
+    height: 1rem
+.main
+  &__menu-mobile
+    position: relative
+    &--hidden
+      display: none
+    &--show
+      display: block
+      position: fixed
+      z-index: 99999
+      background: $white
+      padding-right: 1rem
+.close
+  &__svg
+    position: absolute
+    top: -50px
+    right: 0
+    background: $white
+    
+

@@ -1,0 +1,299 @@
+.nav
+  background-color: $light
+  &__label
+    display: flex
+    align-items: center
+    border: solid transparent 1px
+    margin-top: 1.2rem
+    margin-left: -0.3rem
+    &:hover
+      border: solid $primary 1px
+  &__container
+    height: 7.857rem
+    display: flex
+    justify-content: space-between
+    a
+      text-decoration: none
+      color: $dark
+  &__menu
+    display: flex
+    list-style-type: none
+    margin-top: 2.6rem
+    position: relative
+    &-wrap
+      display: flex
+  &__downmenu
+    position: absolute
+    left: 0
+    top: 3rem
+    display: inline-block
+    display: none
+    width: 9rem
+  &__allmenu
+    display: flex
+    align-items: flex-start
+    position: relative
+    z-index: 11
+    margin-left: 2.55rem
+    font-family: 'DIN Pro Medium'
+    font-size: 1.17rem
+    color: $dark
+    fill: $dark
+    &:hover 
+      .nav__downmenu
+        display: inline-block
+        cursor: pointer
+        color: $primary
+        fill: $primary
+  &__topmenu
+    border-bottom: 1px solid transparent
+    height: 2.2rem
+    &--catalog
+      color: $dark
+      text-decoration: none
+      font-size: 1.2rem
+      &:hover 
+        color: $primary
+        cursor: pointer
+    &:hover 
+      border-bottom: 1px solid $primary
+      color: $primary
+      cursor: pointer
+  &__bookmarks
+    display: flex
+    position: relative
+  &__bookmark
+    width: 0
+    height: 0
+    border-width: 5rem 2.1428rem 0.857rem
+    border-style: solid 
+    margin-left: 1rem
+    &--transparent
+      border-color: $grey $grey transparent
+      fill: $primary
+      color: $primary
+    &--primary
+      fill: $white
+      color: $white
+      border-color: $primary $primary transparent
+  &__bookmark-mask
+    position: absolute
+    top: 0
+    left: 1.071rem
+    width: 0
+    height: 0
+    border-width: 4.928rem 2.071rem 0.7857rem
+    border-style: solid 
+    border-color: $light $light transparent
+  &__svg
+    margin-top: 2.5rem
+    margin-left: 2.5rem
+    margin-right: 2.5rem
+    width: 1rem
+    height: 1rem
+    fill: $primary
+  &__downmenu
+    a
+      color: $dark-grey
+      &:hover
+        color: $dark 
+.downmenu
+  &__item
+    text-decoration: none
+    display: block
+    color: $dark-grey
+    line-height: 1.65rem
+.label
+  &__text
+    font-family: 'DIN Pro Regular'
+    font-size: 0.9rem
+    margin-left: 1rem
+    &--strong
+      font-size: 1.714rem
+      letter-spacing: 0.16rem
+.catalog
+  &__svg
+    width: 0.5rem
+    height: 0.5rem
+    margin-left: 0.5rem
+.bookmark
+  &__svg
+    position: absolute
+    top: -3.928rem
+    left: -0.785rem
+    width: 1.42857rem
+    height: 1.42857rem
+    &-bag
+      position: absolute
+      width: 1.42857rem
+      height: 1.42857rem
+      top: 0.7857rem
+      right: 1.357rem
+  &__number
+    position: absolute
+    top: -1.928rem
+    left: -0.357rem
+    font-family: 'DIN Pro Regular'
+    font-size: 16px
+    &-bag
+      position: absolute
+      top: 2.857rem
+      right: 1.7857rem
+      font-family: 'DIN Pro Regular'
+      font-size: 1.14rem
+  
+body
+  margin: 0
+  padding: 0
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  font-family: 'DIN Pro Regular'
+  position: relative
+  transition: transform 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+html
+  overflow-x: hidden
+
+/*----------------- button ---------
+
+.button
+  display: none
+  position: absolute
+  top: 53px
+  left: 10px
+  z-index: 10000
+  background: transparent
+  width: 50px
+  height: 40px
+  overflow: hidden
+  cursor: pointer
+  &:hover
+    cursor: pointer
+
+  > .line
+    display: block
+    width: 80%
+    height: 3px
+    background: $dark
+    margin: 8px auto
+ 
+
+  .line
+    &:nth-child(1), &:nth-child(3)
+      -webkit-transform: rotate(0deg) translateY(0)
+      -moz-transform: rotate(0deg) translateY(0)
+      ttransform: rotate(0deg) translateY(0)
+      -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+      transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+    &:nth-child(2)
+      -webkit-transform: translateX(0)
+      -moz-transform: translateX(0)
+      transform: translateX(0)
+      -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+      transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+/*-------------- the close button ---------
+
+.close .line
+  &:nth-child(1)
+    -webkit-transform: rotate(45deg) translateY(15px)
+    -moz-transform: rotate(45deg) translateY(15px)
+    transform: rotate(45deg) translateY(15px)
+
+  &:nth-child(3)
+    -webkit-transform: rotate(-45deg) translateY(-15px)
+    -moz-transform: rotate(-45deg) translateY(-15px)
+    transform: rotate(-45deg) translateY(-15px)
+
+  &:nth-child(2)
+    -webkit-transform: translateX(-100px)
+    -moz-transform: translateX(-100px)
+    transform: translateX(-100px)
+
+/*---------------- menu -----------
+
+.menu
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  width: 200px
+  height: 100vh
+  background: $primary
+  overflow: hidden
+  padding-left: 0
+  -webkit-transform: translateX(-150%)
+  transform: translateX(-150%)
+  transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+  transition-delay: .1s
+
+  nav ul
+    margin: 0
+    padding: 20px 0
+    list-style: none
+    background: $primary
+    li
+      margin: 0
+      padding: 0
+      a
+        color: $dark
+        text-decoration: none
+        display: block
+        padding: 10px 20px
+        padding-left: 10px
+        -webkit-transform: translateX(0px)
+        transform: translateX(0px)
+        -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+        transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+        position: relative
+        z-index: 9999
+        font-size: 1.5rem
+
+        &:hover
+          background: rgba(1, 1, 1, 0.3)
+          -webkit-transform: translateX(20px)
+          transform: translateX(20px)
+
+/*-- class of show and hide the menu --
+
+body.nav_is_visible
+  transform: translateX(200px)
+
+  .menu
+    transform: translateX(-100%)
+
+/*----------------- content ---------------
+
+.content
+  position: absolute
+  margin: 0 auto
+  padding: 30px 20%
+  font-size: 18px
+  transform: translateX(100%)
+  transition: color 1s ease 1s, background 0.5s ease 1s, transform 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s
+
+  h1
+    font-size: 60px
+
+  p
+    margin-bottom: 100px
+    line-height: 2.4
+
+  .wrapper
+    -webkit-transform: translateX(300%)
+    transform: translateX(300%)
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+.home_is_visible .home .wrapper, .aboutus_is_visible .aboutus .wrapper, .clients_is_visible .clients .wrapper, .contactus_is_visible .contactus .wrapper
+  -webkit-transform: translateX(0)
+  transform: translateX(0)
+
+/*--------------- effect ---------------
+
+    
+
+
+  
+      

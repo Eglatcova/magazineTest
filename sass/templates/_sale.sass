@@ -1,0 +1,86 @@
+.sale
+  margin-top: 8rem
+  &__title
+    max-width: 38rem
+  &__row
+    display: flex
+    justify-content: center
+  &__col
+    margin-top: 4rem
+    display: flex
+    margin-left: 0.8rem
+  &__time
+    position: relative
+    border: solid 4px $primary
+    width: 13.5rem
+    height: 13.5rem
+    border-radius: 50%
+    &--last
+      &::after
+        display: none
+    &--strong
+      font-family: 'DIN Pro Light'
+      font-size: 2rem
+      position: absolute
+      margin-left: auto
+      margin-right: auto
+      left: 0
+      right: 0
+      text-align: center
+      top: 3rem
+    &--small
+      position: absolute
+      font-family: 'DIN Pro Bold'
+      font-size: 5rem
+      color: $primary
+      margin-left: auto
+      margin-right: auto
+      left: 0
+      right: 0
+      text-align: center
+      top: 5rem
+    &::before
+      position: absolute
+      content: ''
+      left: -0.65rem
+      top: -0.65rem
+      width: 14.5rem
+      height: 14.5rem
+      border-radius: 50%
+      border: dashed 2px $grey
+    &::after
+      position: absolute
+      content: ' '
+      width: 5px
+      height: 5px
+      background: $grey
+      z-index: 3 
+      right: -5.575rem
+      border-radius: 50%
+      top: 6.814rem
+  &__share
+    margin-top: 4rem
+    width: 10rem
+    height: 10rem
+    position: relative
+    &::before
+      position: absolute
+      left: 5rem
+      top: 5px
+      content: ' '
+      height: 6rem
+      width: 1px
+      background-color: $grey
+      transform: rotate(45deg)
+      z-index: 2
+    &::after
+      position: absolute
+      right: 4.8rem
+      top: 5px
+      content: ' '
+      height: 6rem
+      width: 1px
+      background-color: $grey
+      transform: rotate(-45deg)
+
+    

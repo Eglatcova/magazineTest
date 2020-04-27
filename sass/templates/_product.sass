@@ -1,0 +1,274 @@
+.product
+  font-family: 'DIN Pro Regular'
+  color: $dark
+  margin-top: 2.4rem
+  &__img
+    &--big
+      height: 39rem
+      display: flex
+      align-items: center
+      justify-content: center
+    &-wrap
+      margin-top: 2rem
+      display: flex
+      justify-content: space-between
+    &--small
+      border: solid 1px $grey
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 6rem
+      &:hover
+        cursor: pointer
+        border: solid 1px $primary
+  &__row
+    margin-top: 4rem
+    display: flex
+    justify-content: space-between
+  &__col-40
+    flex-basis: 38%
+  &__col-60
+    flex-basis: 57.5%
+    margin-top: -0.3rem
+  &__colors
+    display: flex
+    align-items: center
+    margin-top: 2.2rem
+    padding-bottom: 2.2rem
+    border-bottom: 1px dashed $grey
+  &__delivery
+    margin-top: 2rem
+  &__svg
+    width: 17px
+    height: 17px
+    margin-right: 1.3rem
+    margin-left: 1rem
+  &__buttons
+    display: flex
+    justify-content: space-between
+    margin-top: 2.2rem
+    border-top: dashed 1px $grey
+    border-bottom: dashed 1px $grey
+    padding-top: 2rem
+    padding-bottom: 2rem
+    &-wrap
+      display: flex
+  &__button
+    height: 3.5rem
+    display: flex
+    align-items: center
+    text-decoration: none
+    color: $dark
+    border: 1.5px solid $dark
+    font-size: 1.32rem
+    &--first
+      width: 17.5rem
+      margin-right: 1.5rem
+    &--second
+      width: 13.7rem
+    &--alone
+      width: 17rem
+      justify-content: center
+  &__results
+    margin-top: 2rem
+    display: flex
+    justify-content: space-between
+.vendor-code
+  &__name-wrap
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid $grey
+    padding-bottom: 0.4rem
+  &__name
+    margin: 0
+    font-family: 'DIN Pro Bold'
+    font-size: 1.7rem
+  &__view
+    color: $grey
+    padding-top: 0.7rem
+    margin-right: 1rem
+  &__info
+    display: flex
+  &__rating
+    width: 8rem
+    margin-left: -0.5rem
+  &__description
+    display: flex
+    justify-content: space-between
+    margin-top: 2rem
+    padding-bottom: 2.5rem
+    border-bottom: 1px solid $grey
+  &__price
+    font-family: 'DIN Pro Bold'
+    font-size: 1.7rem
+    strong
+      font-size: 3.45rem
+      margin-right: 0.7rem
+  &__presence
+    font-size: 1.15rem
+    color: $dark-grey
+    padding-top: 1rem
+    strong
+      color: $dark
+.color
+  &__tag
+    display: flex
+    align-items: center
+    border: 1px solid $grey
+    margin-right: 0.8rem
+  &__tag--click
+    border: 1px solid $primary
+    cursor: pointer
+  &__title
+    font-size: 1.15rem
+    margin-right: 2rem
+  &__box
+    width: 1.7857rem
+    height: 1.7857rem
+    margin: 1px
+    &--green
+      background: #86C255
+    &--yellow
+      background: #E9EB5B
+    &--red
+      background: #E84B4B
+    &--blue
+      background: #4B91E8
+  &__name
+    padding: 0px 1.4rem
+.delivery
+  &__choices
+    display: flex
+    margin-top: 2rem
+    margin-bottom: 2rem
+  &__choice
+    height: 2.9rem
+    font-size: 1.1rem
+    margin-right: 2.5rem
+    display: flex
+    align-items: center
+    &--clicked
+      position: relative
+      padding-right: 2rem
+      border-right: 1px solid $grey
+      &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 9.61rem
+        width: 46.3rem
+        height: 1px
+        background: $grey
+    &--unclicked
+      position: relative
+      padding-right: 2rem
+      padding-left: 2rem
+      border-right: 1px solid $grey
+      border-left: 1px solid $grey
+      &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 10.792rem
+        width: 35.214rem
+        height: 1px
+        background: $grey
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: -10.357rem
+        width: 10.371rem
+        height: 1px
+        background: $grey
+    label
+      margin-left: 0.7rem
+  &__content
+    margin-left: 2.3rem
+.content
+  &__boxes
+    display: flex 
+    margin-top: 1.2rem
+  &__title
+  &__box
+    border: 1px solid $dark-grey
+    display: flex
+    align-items: center
+    height: 2rem
+    margin-right: 0.9rem
+    padding-left: 0.3rem
+    label
+      margin-left: 0.9rem
+      margin-right: 0.9rem
+  
+    &:active
+      border: 1px solid $primary
+  &__box--checked
+    border: 1px solid $primary
+.results
+  &__info
+    display: flex
+  &__phrase
+    margin-right: 2rem
+  &__icons
+    display: flex
+  &__svg
+    width: 1.214rem
+    height: 1.214rem
+    fill: $grey
+    margin-left: 1.3rem
+    
+
+input[type=radio]
+  position: relative
+  width: 1.214rem
+  height: 1.214rem
+  background: #ffffff
+  &:hover
+    cursor: pointer
+  &::before 
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 1.214rem
+    height: 1.214rem
+    border-radius: 50%
+    transform: translate(-50%, -50%)
+    background-color: white
+    border: 1px solid $dark-grey
+    box-shadow: 1px 1px 2px $grey
+input[type='radio']:checked::after 
+  content: ''
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 0.714rem
+  height: 0.714rem
+  border-radius: 50%
+  background-color: $dark
+  transform: translate(-50%, -50%)
+  visibility: visible
+  input[type='radio']:checked
+    .content__box
+      border: 1px solid $primary
+
+.gallery-top
+  width: 39.2857rem
+  border: solid 1px $grey
+.gallery-thumbs
+  margin-top: 2rem
+  width: 38.714rem
+  height: 14.285rem
+  padding-right: 0.9rem
+.swiper-slide 
+  &--last
+    margin-right: 0.714rem
+ 
+
+
+ 
+
+
+ 
+ 

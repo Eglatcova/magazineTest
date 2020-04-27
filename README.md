@@ -1,0 +1,1 @@
+# magazineTest
